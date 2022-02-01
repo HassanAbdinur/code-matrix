@@ -116,7 +116,7 @@ let update = () => {
             Math.floor(Math.random() * maxColumns) * fontSize,
             (Math.random() * ch) / 2 - 50
         );
-        fallingCharArr.push(FallingChar);
+        fallingCharArr.push(fallingChar);
     }
     ctx.fillStyle = "rgba(0,0,0,0.5)";
     ctx.fillRect(0, 0, cw, ch);
