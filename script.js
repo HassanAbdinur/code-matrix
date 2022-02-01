@@ -80,9 +80,9 @@ let charArr = [
     "Ц"
 ];
 
-let maxCharCount = 300;
+let maxCharCount = 500;
 let fallingCharArr = [];
-let fontSize = 13;
+let fontSize = 20;
 let maxColumns = cw / fontSize;
 
 let frames = 0;
@@ -98,7 +98,7 @@ class FallingChar {
             charArr[Math.floor(Math.random() * (charArr.length - 1))].toUpperCase();
         this.speed = (Math.random() * fontSize * 3) / 4 + (fontSize * 3) / 4;
 
-        ctx.fillStyle = "rgba(0,255,0)";
+        ctx.fillStyle = "rgba(255,0,0)";
         ctx.font = fontSize + "px sans-serif";
         ctx.fillText(this.value, this.x, this.y);
         this.y += this.speed;
